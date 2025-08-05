@@ -257,7 +257,7 @@ async function createRide() {
 
 
       }}
-      type="text" className='bg-[#eee] px-12 py-2 text-lg rounded-lg w-full '
+      type="text" className='bg-[#eee] px-12 py-2 text-lg rounded-lg mt-8 w-full '
       placeholder='Entre your destination' 
       
       />  
