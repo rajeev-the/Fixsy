@@ -34,7 +34,7 @@ const ConfirmRide = (props) => {
         className='p-1 text-center w-[93%] absolute top-0'
         onClick={() => props.setConfirmRidePanel(false)}
       >
-        <i className="text-3xl text-gray-200 ri-arrow-down-wide-line"></i>
+        <i className="text-3xl text-[#004030]  ri-arrow-down-wide-line"></i>
       </h5>
 
       <h3 className='text-2xl font-semibold mb-5'>Choose a Service Expert</h3>
@@ -58,7 +58,7 @@ const ConfirmRide = (props) => {
           onClick={() => {
            navigtor("/riding")
           }}
-          className='w-full mt-5 bg-green-600 text-white font-semibold p-2 rounded-lg'
+          className='w-full mt-5 bg-[#4A9782] text-black font-semibold p-2 rounded-lg'
         >
           Confirm
         </button>

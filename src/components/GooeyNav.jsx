@@ -153,7 +153,7 @@ const GooeyNav = ({
             z-index: 1;
           }
           .effect.text {
-            color: white;
+            color: #FFF9E5;
             transition: color 0.3s ease;
           }
           .effect.text.active {
@@ -293,7 +293,7 @@ const GooeyNav = ({
             {items.map((item, index) => (
   <li
     key={index}
-    className={`rounded-5xl relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white ${activeIndex === index ? "active" : ""
+    className={`rounded-5xl relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-[#FFF9E5] ${activeIndex === index ? "active" : ""
       }`}
   >
     <Link

@@ -16,22 +16,22 @@ const Riding = () => {
 
   return (
     <div className='h-screen'>
-    <Link to='/home' className='fixed right-2 top-2 h-10 w-10 bg-white flex items-center justify-center rounded-full'>
-        <i className="text-lg font-medium ri-home-5-line"></i>
+    <Link to='/home' className='fixed right-2 top-2 h-10 w-10 bg-[#4A9782] flex items-center justify-center rounded-full'>
+        <i className="text-lg font-medium  text-[#DCD0A8] ri-home-5-line"></i>
     </Link>
     <div className='h-[400px]'>
     <img className='h-full w-full object-cover' src="https://miro.medium.com/v2/resize:fit:1400/0*gwMx05pqII5hbfmX.gif" alt="" />
                 {/* <img className='h-12 rounded-full object-cover w-12' alt="" /> */}
 
     </div>
-    <div className='h-1/2 p-4'>
+    <div className='h-1/2 p-4 bg-[#DCD0A8]'>
      <h5
         className=" text-center "
         onClick={() => {
           props.setVehicleFound(false);
         }}
       >
-        <i className="text-3xl text-gray-200 ri-arrow-down-wide-line"></i>
+        <i className="text-3xl text-[#004030] ri-arrow-down-wide-line"></i>
       </h5>
 
         <div className='flex items-center justify-between'>
@@ -87,7 +87,7 @@ const Riding = () => {
 
             </div>
         </div>
-        <button className='w-full mt-5 bg-green-600 text-white font-semibold p-2 rounded-lg'>Make a Payment</button>
+        <button className='w-full mt-5 bg-[#4A9782] text-black font-semibold p-2 rounded-lg'>Make a Payment</button>
          
 
     </div>

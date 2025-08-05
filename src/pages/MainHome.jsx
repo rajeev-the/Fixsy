@@ -207,27 +207,7 @@ async function createRide() {
     <div className='h-screen relative overflow-hidden'>
       
 
-    <div className="relative w-full px-6 py-8 flex justify-between  bg-[#10b981] rounded-b-3xl items-center z-5">
-      <span className="absolute inset-0 z-12 pointer-events-none mix-blend-lighten blur-md bg-white/25 "></span>
-
-
-  {/* Logo - Top Left */}
-  <img
-    className="w-[80px]  sm:w-[100px] z-11  absolute "
-    src="https://ik.imagekit.io/vuavxn05l/Fixsy%20Logo%20with%20Worker%20Silhouette.png?updatedAt=1754424720663"
-    alt="Fixsy Logo"
-  />
-
-
-  {/* Button - Top Right */}
-  <button
-    onClick={() => navigate("/riding")}
-    className="absolute top-2  font-bold  right-5 h-14 w-14 rounded-full text-black     flex items-center justify-center   hover:scale-105"
-  >
-    <i className="ri-user-location-line text-3xl"></i>
-  </button>
-
-</div>
+    
 
   
     <div className='h-screen w-screen'>
@@ -236,10 +216,10 @@ async function createRide() {
 
     <div 
   
-        className="absolute bottom-[320px] right-4 z-11 w-14 h-14 rounded-full bg-[#10b981] shadow-xl flex items-center justify-center text-white cursor-pointer"
+        className="absolute bottom-[320px] right-4 z-11 w-14 h-14 rounded-full bg-[#004030] shadow-xl flex items-center justify-center text-white cursor-pointer"
        
       >
-        <i className="ri-navigation-fill text-black text-xl"></i>
+        <i className="ri-navigation-fill text-[#DCD0A8] text-xl"></i>
       </div>
       
       
@@ -249,7 +229,7 @@ async function createRide() {
 
     </div>
     <div className='flex flex-col  justify-end h-screen absolute top-0 w-full'>
-      <div className='h-[30%] p-6 bg-white relative'>
+      <div className='h-[30%] p-6 bg-[#DCD0A8] relative'>
         <h5 ref={panelCloseRef} onClick={()=>{setPanelOpen(false)}}
          className=' opacity-0 absolute right-6 top-3 text-xl'>
         <i className="  ri-arrow-down-wide-line"></i>
@@ -277,10 +257,10 @@ async function createRide() {
 
 
         </form>
-        <button onClick={findTrip}  className='bg-black px-4 py-2 text-white rounded-lg mt-3 w-full'>Find fixer</button>
+        <button onClick={findTrip}  className='bg-[#4A9782] px-4 py-2 text-black text-lg font-semibold rounded-lg mt-3 w-full'>Find fixer</button>
 
       </div>
-      <div ref={paneleRef} className=' bg-white h-0 '>
+      <div ref={paneleRef} className=' bg-[#DCD0A8] h-0 '>
         <LocationSearchPanel  
                                suggestions={activeField === 'pickup' ? pickupSuggestions : destinationSuggestions}
                               setPickup={setPick}
@@ -294,7 +274,7 @@ async function createRide() {
     </div>
 
 
-    <div ref={vehiclePanelRef} className='fixed w-full z-10 bottom-0 translate-y-full bg-white px-3 py-10 pt-12'>
+    <div ref={vehiclePanelRef} className='fixed w-full z-10 bottom-0 translate-y-full bg-[#DCD0A8] px-3 py-10 pt-12'>
 
              <Panelvehicale 
              fare={fare}
@@ -323,7 +303,7 @@ async function createRide() {
             setVehicleFound={setVehicleFound}  setConfirmRidePanel={setConfirmRidePanel}/>
       
        </div>
-        <div ref={waitingForDriverRef}  className='fixed w-full z-10 bottom-0  bg-white px-3 py-10 pt-12'>
+        <div ref={waitingForDriverRef}  className='fixed w-full z-10 bottom-0  bg-[#DCD0A8] px-3 py-10 pt-12'>
 
            <WaitingForDriver 
             setWaitingForDriver={setWaitingForDriver}
@@ -333,7 +313,7 @@ async function createRide() {
 
 
 
-       <div ref={vehicleFoundRef} className='fixed w-full z-10 bottom-0 translate-y-full bg-white px-3 py-10 pt-12'>
+       <div ref={vehicleFoundRef} className='fixed w-full z-10 bottom-0 translate-y-full bg-[#DCD0A8] px-3 py-10 pt-12'>
 
            <LookingForDriver 
            pickup={pick}

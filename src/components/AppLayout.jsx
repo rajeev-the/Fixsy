@@ -13,7 +13,7 @@ const AppLayout = ({ children, showNavbar = false }) => {
       {children}
 
       {showNavbar && (
-        <div className="fixed bottom-0 left-0 w-full text-[#1E293B]  rounded-t-2xl px-10 bg-[#10B981]  py-3 z-50">
+        <div className="fixed bottom-0 left-0 w-full text-[black]  font-semibold rounded-t-2xl px-10 bg-[#004030]  py-3 z-50">
           <GooeyNav
             items={items}
             particleCount={15}

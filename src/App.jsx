@@ -62,11 +62,11 @@ const App = () => {
     </AppLayout>} />
   {/* ✅ Captain Home (Protected) - no navbar */}
   <Route path='/captain-home' element={
-    <CaptainProtectWrapper>
+  
       <AppLayout showNavbar={false}>
         <CaptainHome />
       </AppLayout>
-    </CaptainProtectWrapper>
+   
   } />
 
   {/* ✅ User logout with wrapper */}

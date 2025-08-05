@@ -16,24 +16,24 @@ const CaptainLogin = () => {
     const submitHandler = async (e) => {
         e.preventDefault();
 
-        const captainData = {
-            email: email,
-            password: password
-        };
+        // const captainData = {
+        //     email: email,
+        //     password: password
+        // };
 
-        try {
-            const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/captain/login`, captainData);
+        // try {
+        //     const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/captain/login`, captainData);
 
-            if (res.status === 200) {
-                const data = res.data;
-                setCaptainData(data.captain);
-                localStorage.setItem('captain-token', data.token);
-                navigate('/captain-home');
-            }
-        } catch (error) {
-            console.error('Login failed:', error);
-        }
-
+        //     if (res.status === 200) {
+        //         const data = res.data;
+        //         setCaptainData(data.captain);
+        //         localStorage.setItem('captain-token', data.token);
+               
+        //     }
+        // } catch (error) {
+        //     console.error('Login failed:', error);
+        // }
+ navigate('/captain-home');
         setEmail('');
         setPassword('');
     };

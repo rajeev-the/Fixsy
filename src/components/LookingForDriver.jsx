@@ -39,7 +39,7 @@ const LookingForDriver = (props) => {
           props.setVehicleFound(false);
         }}
       >
-        <i className="text-3xl text-gray-200 ri-arrow-down-wide-line"></i>
+        <i className="text-3xl text-[#004030] ri-arrow-down-wide-line"></i>
       </h5>
 
       <h3 className="text-2xl font-semibold mb-3 text-center">Connecting to Provider...</h3>

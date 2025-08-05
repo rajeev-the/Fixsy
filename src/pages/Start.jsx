@@ -7,16 +7,56 @@ const Start = () => {
 
 
   return (
-    <div className='h-screen w-full'>
-        <div>
-       <div className='bg-cover bg-center h-screen bg-[url(https://images.unsplash.com/photo-1619059558110-c45be64b73ae?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] pt-8 flex justify-between flex-col w-full '>
-       <img className='w-[120px] sm:w-[100px] ml-8' src="" alt="" />
-       <div className='bg-white pb-8 py-4 px-4'>
-        <h2 className='text-[30px] font-semibold'>Get Started with Fixsy</h2>
-         <Link to='/login' className='flex items-center justify-center w-full bg-black text-white py-3 rounded-lg mt-5'>Continue </Link>
-       </div>
-       </div>
+    <div className="bg-black text-white min-h-screen">
+      {/* Header Section */}
+      <div className="flex justify-between items-center p-4">
+        <button className="text-white">☰</button>
+        <span className="text-xl font-bold">Services</span>
+        <button className="text-white">🔍</button>
+      </div>
+
+      {/* Service Categories Section */}
+      <div className="grid grid-cols-3 gap-4 p-4">
+        <div className="text-center">
+          <img src="path-to-carpenter-image" alt="Carpenter" className="mx-auto" />
+          <span className="block mt-2">Carpenter</span>
         </div>
+        <div className="text-center">
+          <img src="path-to-electrician-image" alt="Electrician" className="mx-auto" />
+          <span className="block mt-2">Electrician</span>
+        </div>
+        <div className="text-center">
+          <img src="path-to-doctor-image" alt="Doctor" className="mx-auto" />
+          <span className="block mt-2">Doctor</span>
+        </div>
+        <div className="text-center">
+          <img src="path-to-worker-image" alt="Worker" className="mx-auto" />
+          <span className="block mt-2">Worker</span>
+        </div>
+        <div className="text-center">
+          <img src="path-to-teacher-image" alt="Teacher" className="mx-auto" />
+          <span className="block mt-2">Teacher</span>
+        </div>
+        <div className="text-center">
+          <img src="path-to-plumber-image" alt="Plumber" className="mx-auto" />
+          <span className="block mt-2">Plumber</span>
+        </div>
+      </div>
+
+      {/* Trending Service Section */}
+      <div className="text-center mt-4">
+        <button className="bg-teal-500 text-white py-2 px-4 rounded-full">
+          Trending Service
+        </button>
+      </div>
+
+      {/* Bottom Navigation */}
+      <div className="flex justify-between items-center p-4 bg-white">
+        <button className="text-black">🏠</button>
+        <button className="text-black">👥</button>
+        <button className="text-black">📱</button>
+        <button className="text-black">👤</button>
+      </div>
     </div>
   )
 }

@@ -46,25 +46,25 @@ const Panelvehicale = (props) => {
             <h5 className='p-1 text-center w-[93%] absolute top-0' onClick={() => {
                 props.setVehiclePanel(false)
                
-            }}><i className="text-3xl text-gray-200 ri-arrow-down-wide-line"></i></h5>
+            }}><i className="text-3xl text-[#004030] ri-arrow-down-wide-line"></i></h5>
             <h3 className='text-2xl font-semibold mb-5'>Pick Your Service Expert</h3>
 
 
-             <section className="max-w-md mx-auto bg-white shadow-xl rounded-2xl p-4 font-[Inter]">
+             <section className="max-w-md mx-auto  shadow-xl rounded-2xl p-4 font-[Inter]">
       <div className="flex items-center justify-between mb-6">
-  <div className="flex items-center gap-2 bg-gray-100 px-3 py-1.5 rounded-full w-full max-w-[220px]">
-    <Search className="w-4 h-4 text-gray-500" />
+  <div className="flex items-center gap-2 bg-[#4A9782] px-3 py-1.5 rounded-full w-full max-w-[220px]">
+    <Search className="w-4 h-4 text-black" />
     <input
       type="text"
       placeholder="Search services..."
-      className="bg-transparent focus:outline-none text-sm text-gray-700 placeholder-gray-400 w-full"
+      className="bg-transparent focus:outline-none text-sm text-black placeholder-black w-full"
     />
   </div>
 
   <div onClick={
     ()=>
     setIsopen(!isopen)
-  } className="ml-4 text-sm text-blue-600  whitespace-nowrap">
+  } className="ml-4 text-sm text-[#4A9782]  whitespace-nowrap">
     {isopen ? <X/> :"View All"  } 
   </div>
 </div>
