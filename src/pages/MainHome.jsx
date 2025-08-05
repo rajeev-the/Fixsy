@@ -235,7 +235,7 @@ async function createRide() {
 
     </div>
     <div className='flex flex-col  justify-end h-screen absolute top-0 w-full'>
-      <div className='h-[35%] p-6 bg-white relative'>
+      <div className='h-[30%] p-6 bg-white relative'>
         <h5 ref={panelCloseRef} onClick={()=>{setPanelOpen(false)}}
          className=' opacity-0 absolute right-6 top-3 text-xl'>
         <i className="  ri-arrow-down-wide-line"></i>
@@ -246,8 +246,7 @@ async function createRide() {
 
         <form onSubmit={(e)=>{SubmitHandler(e)}} className=' relative py-3 '  >
           
-          <div className='line absolute h-10 w-1 top-[35%] -translate-x-1/2 left-5 bg-gray-700 rounded-full '>
-             </div>
+         
    
       <input 
       value={destination}
