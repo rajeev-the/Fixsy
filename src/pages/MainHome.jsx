@@ -213,7 +213,7 @@ async function createRide() {
 
   {/* Logo - Top Left */}
   <img
-    className="w-[120px] sm:w-[100px] z-5 absolute "
+    className="w-[120px] sm:w-[100px]  absolute "
     src="https://ik.imagekit.io/vuavxn05l/Fixsy%20Logo%20with%20Worker%20Silhouette.png?updatedAt=1752730508257"
     alt="Fixsy Logo"
   />
@@ -257,7 +257,7 @@ async function createRide() {
 
 
       }}
-      type="text" className='bg-[#eee] px-12 py-2 text-lg rounded-lg w-full mt-3'
+      type="text" className='bg-[#eee] px-12 py-2 text-lg rounded-lg w-full '
       placeholder='Entre your destination' 
       
       />  
