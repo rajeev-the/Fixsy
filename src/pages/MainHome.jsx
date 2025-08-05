@@ -20,7 +20,7 @@ const MainHome = () => {
 
 
 
-  
+     
   const navigate = useNavigate()
   const [ panelOpen, setPanelOpen ] = useState(false)
   const [pick,setPick] =useState('')
@@ -208,22 +208,23 @@ async function createRide() {
       
 
     <div className="relative w-full px-6 py-8 flex justify-between  bg-[#10b981] rounded-b-3xl items-center z-5">
-      <span className="absolute inset-0 z-10 pointer-events-none mix-blend-lighten blur-md bg-white/25 "></span>
+      <span className="absolute inset-0 z-12 pointer-events-none mix-blend-lighten blur-md bg-white/25 "></span>
 
 
   {/* Logo - Top Left */}
   <img
-    className="w-[120px] sm:w-[100px]  absolute "
-    src="https://ik.imagekit.io/vuavxn05l/Fixsy%20Logo%20with%20Worker%20Silhouette.png?updatedAt=1752730508257"
+    className="w-[80px]  sm:w-[100px] z-11  absolute "
+    src="https://ik.imagekit.io/vuavxn05l/Fixsy%20Logo%20with%20Worker%20Silhouette.png?updatedAt=1754424720663"
     alt="Fixsy Logo"
   />
+
 
   {/* Button - Top Right */}
   <button
     onClick={() => navigate("/riding")}
-    className="absolute top-2 right-5 h-10 w-10 rounded-full bg-black text-white shadow-xl hover:bg-black hover:text-white transition-all duration-300 ease-in-out flex items-center justify-center   hover:scale-105"
+    className="absolute top-2  font-bold  right-5 h-14 w-14 rounded-full text-black     flex items-center justify-center   hover:scale-105"
   >
-    <i className="ri-user-location-line text-2xl"></i>
+    <i className="ri-user-location-line text-3xl"></i>
   </button>
 
 </div>
@@ -232,6 +233,19 @@ async function createRide() {
     <div className='h-screen w-screen'>
       {/* Image for temporary use */}
       <img className='h-full w-full object-cover' src="https://miro.medium.com/v2/resize:fit:1400/0*gwMx05pqII5hbfmX.gif" alt="" />
+
+    <div 
+  
+        className="absolute bottom-[320px] right-4 z-11 w-14 h-14 rounded-full bg-[#10b981] shadow-xl flex items-center justify-center text-white cursor-pointer"
+       
+      >
+        <i className="ri-navigation-fill text-black text-xl"></i>
+      </div>
+      
+      
+
+
+
 
     </div>
     <div className='flex flex-col  justify-end h-screen absolute top-0 w-full'>

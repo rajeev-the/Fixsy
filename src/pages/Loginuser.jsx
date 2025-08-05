@@ -42,7 +42,7 @@ const Loginuser = () => {
   return (
     <div className='p-7 h-screen flex flex-col justify-between'>
       <div>
-        <img className='w-16 mb-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s" alt="" />
+        <img className='w-[100px] sm:w-[100px]  mb-4' src="https://ik.imagekit.io/vuavxn05l/Fixsy%20Logo%20with%20Worker%20Silhouette.png?updatedAt=1754424720663" alt="" />
 
         <form onSubmit={(e) => {
           submitHandler(e)
