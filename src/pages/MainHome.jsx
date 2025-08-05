@@ -213,7 +213,7 @@ async function createRide() {
 
   {/* Logo - Top Left */}
   <img
-    className="w-[120px] sm:w-[100px] z-10 absolute "
+    className="w-[120px] sm:w-[100px] z-5 absolute "
     src="https://ik.imagekit.io/vuavxn05l/Fixsy%20Logo%20with%20Worker%20Silhouette.png?updatedAt=1752730508257"
     alt="Fixsy Logo"
   />
