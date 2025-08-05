@@ -246,7 +246,7 @@ async function createRide() {
 
         <form onSubmit={(e)=>{SubmitHandler(e)}} className=' relative py-3 '  >
           
-          <div className='line absolute h-6 w-1 top-[40%] -translate-x-1/2 left-5 bg-gray-700 rounded-full '>
+          <div className='line absolute h-4 w-1 top-[40%] -translate-x-1/2 left-5 bg-gray-700 rounded-full '>
              </div>
    
       <input 
