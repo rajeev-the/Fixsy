@@ -216,7 +216,7 @@ async function createRide() {
 
     <div 
   
-        className="absolute bottom-[320px] right-4 z-11 w-14 h-14 rounded-full bg-[#004030] shadow-xl flex items-center justify-center text-white cursor-pointer"
+        className="absolute bottom-[380px] right-4 z-11 w-14 h-14 rounded-full bg-[#004030] shadow-xl flex items-center justify-center text-white cursor-pointer"
        
       >
         <i className="ri-navigation-fill text-[#DCD0A8] text-xl"></i>
@@ -229,7 +229,7 @@ async function createRide() {
 
     </div>
     <div className='flex flex-col  justify-end h-screen absolute top-0 w-full'>
-      <div className='h-[30%] p-6 bg-[#DCD0A8] relative'>
+      <div className='h-[35%] p-6 bg-[#DCD0A8] relative'>
         <h5 ref={panelCloseRef} onClick={()=>{setPanelOpen(false)}}
          className=' opacity-0 absolute right-6 top-3 text-xl'>
         <i className="  ri-arrow-down-wide-line"></i>
