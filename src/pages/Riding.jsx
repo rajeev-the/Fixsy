@@ -24,7 +24,7 @@ const Riding = () => {
                 {/* <img className='h-12 rounded-full object-cover w-12' alt="" /> */}
 
     </div>
-    <div className='h-[60%] p-4 bg-[#DCD0A8]'>
+    <div className='h-[50%] p-4 bg-[#DCD0A8]'>
      <h5
         className=" text-center "
         onClick={() => {
@@ -34,7 +34,7 @@ const Riding = () => {
         <i className="text-3xl text-[#004030] ri-arrow-down-wide-line"></i>
       </h5>
 
-        <div className='flex items-center justify-between'>
+        <div className='flex border-b-4 border-[#4A9782] items-center justify-between'>
             <div>
                  <img className='h-12 rounded-full object-cover w-12'  src="https://randomuser.me/api/portraits/men/45.jpg" alt="" />
                  <div className="flex items-center text-yellow-500 text-xl">
