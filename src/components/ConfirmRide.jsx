@@ -29,7 +29,7 @@ const ConfirmRide = (props) => {
   ]
 
   return (
-    <div className='w-full h-[450px]'>
+    <div className='w-full  h-[450px]'>
       <h5
         className='p-1 text-center w-[93%] absolute top-0'
         onClick={() => props.setConfirmRidePanel(false)}

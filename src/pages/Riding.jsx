@@ -24,7 +24,7 @@ const Riding = () => {
                 {/* <img className='h-12 rounded-full object-cover w-12' alt="" /> */}
 
     </div>
-    <div className='h-[55%] p-4 bg-[#DCD0A8]'>
+    <div className='h-[60%] p-4 bg-[#DCD0A8]'>
      <h5
         className=" text-center "
         onClick={() => {
@@ -87,7 +87,7 @@ const Riding = () => {
 
             </div>
         </div>
-        <button className='w-full mt-5 bg-[#4A9782] text-[#DCD0A8] font-semibold p-2 rounded-lg'>Make a Payment</button>
+        <button className='w-full mt-8 bg-[#4A9782] text-[#DCD0A8] font-semibold p-2 rounded-lg'>Make a Payment</button>
          
 
     </div>

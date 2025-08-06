@@ -290,7 +290,7 @@ async function createRide() {
 
 
    //confirm ride
-   <div ref={confirmRidePanelRef} className='fixed w-full z-10 bottom-0 translate-y-full bg-white px-3 py-10 pt-12'>
+   <div ref={confirmRidePanelRef} className='bg-[#DCD0A8] fixed w-full z-10 bottom-0 translate-y-full px-3 py-10 pt-12'>
 
             <ConfirmRide
             createride={createRide}
@@ -303,7 +303,7 @@ async function createRide() {
             setVehicleFound={setVehicleFound}  setConfirmRidePanel={setConfirmRidePanel}/>
       
        </div>
-        <div ref={waitingForDriverRef}  className='fixed w-full z-10 bottom-0  bg-[#DCD0A8] px-3 py-10 pt-12'>
+        <div ref={waitingForDriverRef}  className='fixed w-full z-10 bottom-0  bg-[#DCD0A8] px-3 py-10 '>
 
            <WaitingForDriver 
             setWaitingForDriver={setWaitingForDriver}

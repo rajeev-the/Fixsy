@@ -70,8 +70,8 @@ const Panelvehicale = (props) => {
 </div>
 
 
-   <div className="h-60 overflow-y-auto px-2">
-  <div className="grid grid-cols-3 gap-4">
+   <div className="h-[250px] overflow-y-auto px-2 ">
+  <div className="grid grid-cols-3 gap-2">
     {(isopen ? services1 : services).map((service) => (
       <div
         key={service.name}
