@@ -19,12 +19,12 @@ const Riding = () => {
     <Link to='/home' className='fixed right-2 top-2 h-10 w-10 bg-[#4A9782] flex items-center justify-center rounded-full'>
         <i className="text-lg font-medium  text-[#DCD0A8] ri-home-5-line"></i>
     </Link>
-    <div className='h-[350px]'>
+    <div className=''>
     <img className='h-full w-full object-cover' src="https://miro.medium.com/v2/resize:fit:1400/0*gwMx05pqII5hbfmX.gif" alt="" />
                 {/* <img className='h-12 rounded-full object-cover w-12' alt="" /> */}
 
     </div>
-    <div className='h-1/2 p-4 bg-[#DCD0A8]'>
+    <div className='h-[60%] p-4 bg-[#DCD0A8]'>
      <h5
         className=" text-center "
         onClick={() => {

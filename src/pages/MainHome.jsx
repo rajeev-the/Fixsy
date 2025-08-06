@@ -229,7 +229,7 @@ async function createRide() {
 
     </div>
     <div className='flex flex-col  justify-end h-screen absolute top-0 w-full'>
-      <div className='h-[35%] p-6 bg-[#DCD0A8] relative'>
+      <div className='h-[35%] p-6 bg-[#DCD0A8]  relative'>
         <h5 ref={panelCloseRef} onClick={()=>{setPanelOpen(false)}}
          className=' opacity-0 absolute right-6 top-3 text-xl'>
         <i className="  ri-arrow-down-wide-line"></i>
