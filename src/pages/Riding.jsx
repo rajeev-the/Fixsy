@@ -34,7 +34,7 @@ const Riding = () => {
         <i className="text-3xl text-[#004030] ri-arrow-down-wide-line"></i>
       </h5>
 
-        <div className='flex border-b-4 border-[#4A9782] items-center justify-between'>
+        <div className='flex border-b-2    border-[white] items-center justify-between'>
             <div>
                  <img className='h-12 rounded-full object-cover w-12'  src="https://randomuser.me/api/portraits/men/45.jpg" alt="" />
                  <div className="flex items-center text-yellow-500 text-xl">
@@ -87,7 +87,7 @@ const Riding = () => {
 
             </div>
         </div>
-        <button className='w-full mt-5 bg-[#4A9782] text-black font-semibold p-2 rounded-lg'>Make a Payment</button>
+        <button className='w-full mt-5 bg-[#4A9782] text-[#DCD0A8] font-semibold p-2 rounded-lg'>Make a Payment</button>
          
 
     </div>

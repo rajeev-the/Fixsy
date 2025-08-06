@@ -257,7 +257,7 @@ async function createRide() {
 
 
         </form>
-        <button onClick={findTrip}  className='bg-[#4A9782] px-4 py-2 text-black text-lg font-semibold rounded-lg mt-3 w-full'>Find fixer</button>
+        <button onClick={findTrip}  className='bg-[#4A9782] px-4 py-2 text-[#DCD0A8] text-lg font-semibold rounded-lg mt-3 w-full'>Find fixer</button>
 
       </div>
       <div ref={paneleRef} className=' bg-[#DCD0A8] h-0 '>
