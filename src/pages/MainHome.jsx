@@ -11,6 +11,7 @@ import LookingForDriver from '../components/LookingForDriver'
 import WaitingForDriver from '../components/WaitingForDriver'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import DelhiMap from '../components/DelhiMap'
 
 
 const MainHome = () => {
@@ -212,7 +213,8 @@ async function createRide() {
   
     <div className='h-screen w-screen'>
       {/* Image for temporary use */}
-      <img className='h-full w-full object-cover' src="https://miro.medium.com/v2/resize:fit:1400/0*gwMx05pqII5hbfmX.gif" alt="" />
+      <DelhiMap/>
+
 
     <div 
   
