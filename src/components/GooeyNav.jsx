@@ -282,32 +282,32 @@ const GooeyNav = ({
           className="flex relative"
           style={{ transform: "translate3d(0,0,0.01px)" }}
         >
-          <ul
-            ref={navRef}
-            className="flex gap-8 list-none p-0 px-4 m-0 relative z-[3]"
-            style={{
-              color: "",
-              textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
-            }}
-          >
-            {items.map((item, index) => (
-  <li
-    key={index}
-    className={`rounded-5xl relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-[#FFF9E5] ${activeIndex === index ? "active" : ""
+        <ul
+  className="flex justify-center gap-8 list-none p-0 px-4 m-0 relative z-[3] w-full"
+  style={{
+    color: "",
+    textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
+  }}
+>
+  {items.map((item, index) => (
+    <li
+      key={index}
+      className={`rounded-5xl relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-[#FFF9E5] ${
+        activeIndex === index ? "active" : ""
       }`}
-  >
-    <Link
-      to={item.href}
-      onClick={(e) => handleClick(e, index)}
-      onKeyDown={(e) => handleKeyDown(e, index)}
-      className="outline-none py-[0.6em] px-[1em] inline-block"
     >
-      {item.label}
-    </Link>
-  </li>
-))}
+      <Link
+        to={item.href}
+        onClick={(e) => handleClick(e, index)}
+        onKeyDown={(e) => handleKeyDown(e, index)}
+        className="outline-none py-[0.6em] px-[1em] inline-block"
+      >
+        {item.label}
+      </Link>
+    </li>
+  ))}
+</ul>
 
-          </ul>
         </nav>
         <span className="effect filter" ref={filterRef} />
         <span className="effect text" ref={textRef} />
