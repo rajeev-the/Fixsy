@@ -70,8 +70,8 @@ const Riding = () => {
                 <div className='flex items-center gap-5 p-3 border-b-2'>
                     <i className="text-lg ri-map-pin-2-fill"></i>
                     <div>
-                        <h3 className='text-lg font-medium'>xxxxx</h3>
-                        <p className='text-sm -mt-1 text-gray-600'>xxxx</p>
+                        <h3 className='text-lg font-medium'>Greater Noida</h3>
+                        <p className='text-sm -mt-1 text-gray-600'>Noida</p>
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@ const Riding = () => {
 
             </div>
         </div>
-        <button className='w-full mt- bg-[#4A9782] text-[#DCD0A8] font-semibold p-2 rounded-lg'>Make a Payment</button>
+        <button className='w-full mt- bg-[#4A9782] text-[#DCD0A8] font-semibold p-2 rounded-lg'>Make a Call</button>
          
 
     </div>

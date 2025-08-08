@@ -79,6 +79,7 @@ const Panelvehicale = (props) => {
           props.setVehicleFound(true);
           props.setVehicleType('car');
            props.handleRedirect()
+           props.setSelectedProfessional(service.name)
         }}
         className="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm hover:shadow-md transition cursor-pointer"
       >

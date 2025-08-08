@@ -12,6 +12,7 @@ import WaitingForDriver from '../components/WaitingForDriver'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import DelhiMap from '../components/DelhiMap'
+import { useServiceContext } from "../context/ServiceSearch";
 
 
 const MainHome = () => {
@@ -19,8 +20,17 @@ const MainHome = () => {
 
   // update with your own items
 
+const {
+    locations,
+    professionals,
+    selectedLocation,
+    setSelectedLocation,
+    selectedProfessional,
+    setSelectedProfessional,
+    filteredProviders,
+  } = useServiceContext();
 
-
+  console.log(selectedLocation,selectedProfessional,filteredProviders)
      
   const navigate = useNavigate()
   const [ panelOpen, setPanelOpen ] = useState(false)
@@ -249,7 +259,7 @@ async function createRide() {
       onChange={handleDestinationChange}
       onClick={()=>{setPanelOpen(true)
         setActiveField('destination')
-
+          setSelectedLocation("Delhi")
 
       }}
       type="text" className='bg-[#eee] px-12 py-2 text-lg rounded-lg mt-6 w-full '
@@ -285,6 +295,7 @@ async function createRide() {
               setVehicleType={setVehicleType}
                setVehicleFound ={setVehicleFound}
                handleRedirect={handleRedirect}
+               setSelectedProfessional={setSelectedProfessional}
              
              />
       
@@ -300,6 +311,7 @@ async function createRide() {
             destination={destination}
             fare={fare}
             vehcicleType={vehicleType}
+            filteredProviders={filteredProviders}
            
                    
             setVehicleFound={setVehicleFound}  setConfirmRidePanel={setConfirmRidePanel}/>
