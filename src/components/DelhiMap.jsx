@@ -15,7 +15,7 @@ L.Icon.Default.mergeOptions({
 });
 
 const DelhiMap = () => {
-  const position = [28.6139, 77.209];
+  const position = [28.4575, 77.5070];
 
   return (
     <MapContainer
